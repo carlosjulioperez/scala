@@ -19,12 +19,20 @@ object Functions {
     else str + stringConcatenation(str, n - 1)
 
   /*
-    sc("Scala", 3) = "Scala"
+    sc("Scala", 3) = "Scala" + sc("Scala", 2) = "Scala" + "ScalaScala" = "ScalaScalaScala"
+    sc("Scala", 2) = "Scala" + sc("Scala", 1) = "Scala" + "Scala" = "ScalaScala"
+    sc("Scala", 1) = "Scala"
    */
-  val scala3 = stringConcatenation("Scala", 3)
+  val scalax3 = stringConcatenation("Scala", 3)
+  // when you need loops, use RECURSION.
+
+  // "void" functions
+  def aVoidFunction(aString: String): Unit =
+    le
+
 
   def main(args: Array[String]): Unit = {
-    println(scala3)
+    println(scalax3)
   }
 
 }
